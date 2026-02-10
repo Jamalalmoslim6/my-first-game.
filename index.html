@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My First Game</title>
+  </head>
+  <body>
+    <h1>My First Game</h1>
+    <p>Click the button to get points.</p>
+
+    <button onclick="addPoint()">Click me</button>
+
+    <p>Points: <span id="points">0</span></p>
+
+    <script>
+      let points = 0;
+
+      function addPoint() {
+        points = points + 1;
+        document.getElementById("points").textContent = points;
+      }
+    </script>
+  </body>
+</html>
